@@ -1,0 +1,65 @@
+header {
+    background-color: #ff6347; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 20px; /* Padding di dalam header */
+    text-align: center; /* Teks di tengah */
+}
+
+nav ul {
+    list-style-type: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding */
+}
+
+nav ul li {
+    display: inline; /* Menampilkan item dalam satu baris */
+    margin: 0 15px; /* Margin antara item */
+}
+
+nav ul li a {
+    color: white; /* Warna teks link */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+form {
+    max-width: 400px; /* Lebar maksimum form */
+    margin: 20px auto; /* Margin otomatis untuk pusat */
+    padding: 20px; /* Padding di dalam form */
+    background-color: white; /* Warna latar belakang form */
+    border-radius: 5px; /* Sudut membulat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+form label {
+    margin: 5px 0; /* Margin untuk label */
+}
+
+form input {
+    margin-bottom: 10px; /* Margin bawah untuk input */
+    padding: 10px; /* Padding di dalam input */
+    border: 1px solid #ccc; /* Border input */
+    border-radius: 5px; /* Sudut membulat */
+    width: 100%; /* Lebar penuh */
+}
+
+form button {
+    padding: 10px; /* Padding di dalam tombol */
+    background-color: #ff6347; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Kursor pointer saat hover */
+}
+
+form button:hover {
+    background-color: #e5533d; /* Warna saat hover */
+}
+
+footer {
+    text-align: center; /* Teks di tengah */
+    padding: 10px; /* Padding di dalam footer */
+    background-color: #ff6347; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+    position: relative; /* Posisi relatif */
+    bottom: 0; /* Posisi di bawah */
+    width: 100%; /* Lebar penuh */
+}
