@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login dan Galeri Produk Makanan</title>
+    <style>
+        /* style untuk body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* untuk Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Bagian Produk */
+        .product {
+            margin: 20px 0;
+            padding: 20px 0;
+            background-color: white;
+        }
+        .product h2 {
+            text-align:center ;
+            font-size: 32px;
+            color:#333
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-item img {
+            width: 100%;
+            border-radius: 5px;
+
+        }
+        .product-item h3 {
+            font-size: 20px;
+            color: #333;
+
+        }
+        .product-item p {
+            font-size: 18px;
+            color: #f30;
+        }
+
+        button {
+            background-color: #f30;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #c20;
+        }
+        
+        /* Form Login */
+        .login-form {
+            max-width: 300px; 
+            margin: auto; 
+            padding-top: 50px; 
+        }
+
+        footer {
+            background-color: #333; 
+            color: white; 
+            padding: 10px 0; 
+            text-align:center; 
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Selamat datang di Toko Makanan Audy</h1>
+    <nav>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#products" id="products-link" style="display:none;">Produk</a></li>
+          <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+</header>
+
+<div class="login-form">
+    <h2>Form Login</h2>
+    <form action="konek.php" method="post" onsubmit="return handleLogin(event)">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+<section class="product" id="products-section" style="display:none;">
+    <h2>Produk Kami</h2>
+    <div class="product-grid">
+        
+       <!-- Produk Sate Wenak -->
+       <div class="product-item">
+           <img src="https://www.indoindians.com/wp-content/uploads/2016/03/Sate-Ayam.jpg" alt="Sate Ayam">
+           <h3>Sate Ayam</h3>
+           <p>Harga: Rp10.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Nasi Goreng Wenak-->
+       <div class="product-item">
+           <img src="https://asianinspirations.com.au/wp-content/uploads/2020/08/20200819-Nasi-Goreng-The-Tastiest-Fried-Rice_00FeatImg-1024x683.jpg" alt="Nasi Goreng">
+           <h3>Nasi Goreng</h3>
+           <p>Harga: Rp20.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Rendang Mantap-->
+       <div class="product-item">
+           <img src="https://1.bp.blogspot.com/-Dq6gdjWd6SY/VH8lv8cyooI/AAAAAAAAAeQ/OyrWivVJNVE/s1600/Cara%252BMembuat%252BDaging%252BRendang%252BPadang%252BEnak.jpg" alt="Rendang">
+           <h3>Rendang</h3>
+           <p>Harga: Rp35.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Gado-Gado enak tenan-->
+       <div class="product-item">
+           <img src="https://minimalistbaker.com/wp-content/uploads/2019/05/Gado-Gado-SQUARE.jpg" alt="Gado-Gado">
+           <h3>Gado-Gado</h3>
+           <p>Harga: Rp10.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Soto Ayam lezats -->
+       <div class="product-item">
+           <img src="https://th.bing.com/th/id/OIP.N8fZUtvyj-lnku96Gq8sGgHaHV?w=2000&h=1981&rs=1&pid=ImgDetMain" alt="Soto Ayam">
+           <h3>Soto Ayam</h3>
+           <p>Harga: Rp30.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Bakso gurih-->
+       <div class="product-item">
+           <img src="https://cdn-2.tstatic.net/tribunnews/foto/bank/images/bakso-sapi-kuah-1.jpg" alt="Bakso">
+           <h3>Bakso</h3>
+           <p>Harga: Rp18.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Pisang Goreng Wenak-->
+       <div class="product-item">
+           <img src="https://th.bing.com/th/id/OIP.gRt5q9HotVpBKJTxL5LLvQHaJQ?w=700&h=875&rs=1&pid=ImgDetMain" alt="Pisang Goreng">
+           <h3>Pisang Goreng</h3>
+           <p>Harga: Rp7.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Klepon manis -->
+       <div class="product-item">
+           <img src="https://realsanatural.com/wp-content/uploads/2021/02/recipe-klepon.jpg" alt="Klepon">
+           <h3>Klepon</h3>
+           <p>Harga: Rp8.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Martabak Manis -->
+       <div class="product-item">
+           <img src="https://www.rumahmesin.com/wp-content/uploads/2019/02/Kamu-Bisa-Menemukan-Resep-Martabak-Manis-Disini-1.jpg" alt="Martabak Manis">
+           <h3>Martabak Manis</h3>
+           <p>Harga: Rp35.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+       <!-- Produk Es Campur lengkap -->
+       <div class="product-item">
+           <img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/sasefoto/original/38522_es-campur.JPG" alt="Es Campur">
+           <h3>Es Campur</h3>
+           <p>Harga: Rp15.000</p>
+           <button>Beli Sekarang</button>
+       </div>
+
+    </div>
+</section>
+
+<footer>
+    &copy; 2024 Toko Makanan Audy
+</footer>
+
+<script>
+// Fungsi untuk menangani login
+function handleLogin(event) {
+    event.preventDefault(); // Mencegah form dari pengiriman default
+
+    // Simulasi login berhasil
+    const username = document.getElementById('username').value;
+
+    // Tampilkan produk setelah login
+    document.getElementById('products-section').style.display = 'block';
+    document.getElementById('products-link').style.display = 'inline'; // Menampilkan link produk di navigasi
+}
+</script>
+
+</body>
+</html>
