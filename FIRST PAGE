@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audy Foodie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Audy Foodie</h1>
+        <nav>
+            <ul>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>About Us</h2>
+        <p>Audy Foodie is your go-to place for delicious recipes and food inspiration!</p>
+    </section>
+
+    <section>
+        <h2>Our Favorite Indonesian Dishes</h2>
+        <div class="food-gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Nasi_Goreng_Kampung.jpg/800px-Nasi_Goreng_Kampung.jpg" alt="Nasi Goreng" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Sate_ayam.jpg/800px-Sate_ayam.jpg" alt="Sate Ayam" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rendang_daging.jpg/800px-Rendang_daging.jpg" alt="Rendang" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gado-gado.jpg/800px-Gado-gado.jpg" alt="Gado-Gado" />
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Audy Foodie. All rights reserved.</p>
+    </footer>
+</body>
+</html>
